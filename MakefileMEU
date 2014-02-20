@@ -1,0 +1,30 @@
+
+# Universidade Federal de Pelotas
+# Ciencia da Computacao
+# Algoritmos e Estruturas de Dados 2
+# Grafos - Tarefa 1
+# Rodrigo Oliveira
+
+####################################################################
+
+socompila: compila help
+
+compila: sardas.c
+
+	@echo  ..............................................................
+	@echo   Making...
+
+# Gera os objetos
+	gcc -c sardas.c
+
+# Liga os objetos e gera o executavel
+	gcc -o sardas sardas.o
+
+help:
+	@echo  ..............................................................
+	@echo   Para executar digite: ./sardas
+	@echo
+	@echo  ..............................................................
+
+clean:
+	rm *.o
